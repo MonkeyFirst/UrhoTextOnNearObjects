@@ -75,12 +75,12 @@ void NameShow::FixedUpdate(float timeStep)
 	
 	if (curDistance < distance_) //Show 
 	{
-		//text_->SetEnabledRecursive(true);
+		text_->SetEnabledRecursive(true);
 
 	}
 	else // hide node
 	{
-		//text_->SetEnabledRecursive(false);
+		text_->SetEnabledRecursive(false);
 	}
 
 	if (lookToPlayer_) 

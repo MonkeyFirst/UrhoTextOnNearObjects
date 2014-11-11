@@ -117,7 +117,7 @@ void UrhoMain::OtherSetup()
 		if (name_.GetString().Length() > 0) 
 		{
 			NameShow* ns = objects[i]->CreateComponent<NameShow>();
-			ns->SetTextViewDistance(5.0f);
+			ns->SetTextViewDistance(15.0f);
 			ns->SetPlayerNode(playerNode_);
 		}
 	}

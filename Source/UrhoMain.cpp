@@ -119,6 +119,10 @@ void UrhoMain::OtherSetup()
 			NameShow* ns = objects[i]->CreateComponent<NameShow>();
 			ns->SetTextViewDistance(15.0f);
 			ns->SetPlayerNode(playerNode_);
+
+
+			
+
 		}
 	}
 

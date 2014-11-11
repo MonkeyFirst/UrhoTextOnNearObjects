@@ -58,6 +58,13 @@ void NameShow::Start()
 
 	lookToPlayer_ = true;
 
+
+	//Scale 1,1,1
+
+	//Vector3 origParentScale = objects[i]->GetWorldScale();
+	//Vector3 textScale = Vector3::ONE / origParentScale;
+	text_->SetWorldScale(Vector3::ONE);
+
 }
 
 void NameShow::Update(float timeStep) 

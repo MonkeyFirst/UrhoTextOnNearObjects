@@ -1,0 +1,3 @@
+F:/GIT_PROJECTS/UrhoTextOnNearObjects/Build/CMakeFiles/ALL_BUILD.dir
+F:/GIT_PROJECTS/UrhoTextOnNearObjects/Build/CMakeFiles/UrhoQuickStart.dir
+F:/GIT_PROJECTS/UrhoTextOnNearObjects/Build/CMakeFiles/ZERO_CHECK.dir

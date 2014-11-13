@@ -121,6 +121,20 @@ void Character::FixedUpdate(float timeStep)
 		isAlradyFired = false;
 	}
 
+	static bool isTimeScaled = false;
+	if (input->GetKeyDown(KEY_P)) 
+	{
+		if (!isTimeScaled) 
+		{
+			GetNode()->GetScene()->SetTimeScale(0.1f);
+			isTimeScaled = true;
+		}
+	}
+	else 
+	{
+		isTimeScaled = false;
+	}
+
 }
 
 void Character::HandleNodeCollision(StringHash eventType, VariantMap& eventData)

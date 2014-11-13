@@ -7,6 +7,8 @@
 // My Scripts 
 #include "NameShow.h"
 #include "Character.h"
+#include "Rotator.h"
+#include "LineGenerator.h"
 
 
 namespace Urho3D
@@ -32,6 +34,8 @@ protected:
 	SharedPtr<Node> cameraNode_;
 	SharedPtr<Node> playerNode_;
 	WeakPtr<Character> playerScript_;
+
+	SharedPtr<Node> sphereNode_;
 
 private:
 	void CreateConsole();

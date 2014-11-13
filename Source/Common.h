@@ -54,3 +54,7 @@
 #include "DebugRenderer.h"
 
 #include "Text3D.h"
+
+#include "Geometry.h"
+#include "IndexBuffer.h"
+#include "VertexBuffer.h"

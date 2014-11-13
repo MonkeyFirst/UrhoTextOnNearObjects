@@ -15,8 +15,9 @@ UrhoMain::UrhoMain(Context* context) : Application(context)
 
 	//Register my scripts
 	NameShow::RegisterObject(context_);
-	Character::RegisterObject(context);
-
+	Character::RegisterObject(context_);
+	Rotator::RegisterObject(context_);
+	LineGenerator::RegisterObject(context_);
 }
 
 void UrhoMain::Start()
@@ -126,8 +127,12 @@ void UrhoMain::OtherSetup()
 		}
 	}
 
-
-
+	//Line generator
+	sphereNode_ = scene_->GetChild("lineGenNode", true);
+	Rotator* r = sphereNode_->CreateComponent<Rotator>();
+	r->SetRotateParam(10.0f, 0.5f);
+	LineGenerator* lg = sphereNode_->CreateComponent<LineGenerator>();
+	
 }
 
 void UrhoMain::CreateConsole()
